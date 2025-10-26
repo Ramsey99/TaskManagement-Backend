@@ -74,7 +74,7 @@ exports.forgotPassword = async (req, res) => {
       expiresIn: "15m",
     });
 
-    const resetLink = `http://localhost:3000/resetPass/${resetToken}`;
+    const resetLink = `https://taskmanagement-frontend-smoky.vercel.app/resetPass/${resetToken}`;
 
     const transporter = nodemailer.createTransport({
       service: "gmail",
